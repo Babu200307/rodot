@@ -1,0 +1,153 @@
+body{
+    background: black;
+    color: rgb(25, 0, 0);
+    margin: auto;
+    size: initial;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: chartreuse;
+
+}
+h1{
+    text-align: center;
+    color: rgb(177, 23, 23);
+}
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 18px;
+
+}
+#center{
+    height: 200px;
+    width: 200px;
+    background: chartreuse;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+#lleg,#rleg{
+    height: 100px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+    margin-top: -18px;
+
+}
+#main{
+    height: 600px;
+    width: 350px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 10px;
+}
+#main:hover #face{
+    width: 250px;
+    background: linear-gradient(red);
+    animation: changeface 1s 200;
+}
+@keyframes changeface{
+    0%{
+        transform: translatez(120px);
+        background: pink;
+
+    }
+    25%{
+        transform: translateX(-120px);
+        background: crimson;
+
+    }
+    50%{
+        transform: translate3D(-200px);
+        background: yellow:
+    }
+    75%{
+        transform: rotateX(225px);
+        background: orange;
+    }
+    100%{
+        transform: rotateX(90deg);
+        background: blue;
+    }
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 125px;
+}
+#main:hover #larm{
+    animation: changelarm 1s infinite;
+
+}
+@keyframes changelarm{
+    0%{
+        transform: :rotate(0deg);
+        transform-origin: top center
+    }
+    100%{
+        transform: rotate(390deg);
+        transform-origin: bottomc center;
+    }
+}
+#main:hover #rarm{
+    animation: changerarm 1s infinite;
+
+}
+@keyframes changerarm{
+    0%{
+        transform:rotate(0deg);
+        transform-origin: top center
+    }
+    100%{
+        transform: rotate(390deg);
+        transform-origin: bottom center;
+    }
+}#main:hover #center{
+    animation: changecenter 1s 200 ;
+
+}
+@keyframes changecenter{
+    0%{
+        transform:rotate(0deg);
+        transform-origin: top center;
+        border-radius: 50%;
+        background: red;
+        translate: rotate(200);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: bottom center;
+        border-radius: 50%;
+        background: rgb(74, 243, 22); 
+        translate: rotate(200)
+    }
+}
